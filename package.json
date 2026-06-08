@@ -1,20 +1,25 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@firebase/auth-interop-types",
+  "version": "0.2.5",
+  "description": "@firebase/auth interop Types",
+  "author": "Firebase <firebase-support@google.com> (https://firebase.google.com/)",
+  "license": "Apache-2.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc",
+    "test:ci": "node ../../scripts/run_tests_in_ci.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "firebase-admin": "^13.10.0"
+  "files": [
+    "index.d.ts"
+  ],
+  "repository": {
+    "directory": "packages/auth-types",
+    "type": "git",
+    "url": "git+https://github.com/firebase/firebase-js-sdk.git"
   },
-  "devDependencies": {}
+  "bugs": {
+    "url": "https://github.com/firebase/firebase-js-sdk/issues"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4"
+  }
 }
